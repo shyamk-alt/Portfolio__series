@@ -846,7 +846,7 @@ button { font: inherit; color: inherit; }
   96% { transform: translate(-2px, 0); text-shadow: 2px 0 rgba(255, 214, 223, 0.8), -2px 0 rgba(194, 37, 92, 0.8); }
 }
 .finale__lede { max-width: 46ch; font-size: clamp(16px, 1.5vw, 20px); color: var(--ink-2); }
-.links { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; width: 100%; max-width: 1020px; margin-top: 22px; text-align: left; }
+.links { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; width: 100%; max-width: 860px; margin-top: 22px; text-align: left; }
 .linkcard { display: grid; gap: 8px; padding: 20px 22px; text-decoration: none; transition: transform 0.4s var(--ease), border-color 0.3s, box-shadow 0.4s; }
 .linkcard:hover { transform: translateY(-5px); border-color: var(--edge-hi); box-shadow: 0 26px 60px -24px rgba(255, 80, 135, 0.55); }
 .linkcard--wide { grid-column: 1 / -1; }
