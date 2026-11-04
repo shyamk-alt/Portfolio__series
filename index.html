@@ -1,0 +1,400 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Shyam K. — Portfolio Series</title>
+  <meta name="description" content="Shyam K. (shyamk-alt) — Frontend Developer, Full-Stack Developer and Creative Technologist. Engineering intelligence. Designing experiences.">
+  <meta name="author" content="Shyam K.">
+  <meta name="theme-color" content="#2a0a1a">
+  <link rel="canonical" href="https://shyamk-alt.github.io/Portfolio__series/">
+  <link rel="me" href="https://github.com/shyamk-alt">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Shyam K. — I build --intelligent">
+  <meta property="og:description" content="Frontend Developer • Full-Stack Developer • Creative Technologist. Engineering intelligence. Designing experiences.">
+  <meta property="og:url" content="https://shyamk-alt.github.io/Portfolio__series/">
+  <meta property="og:image" content="https://shyamk-alt.github.io/Portfolio__series/public/shyam-banner-1920x1080.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://shyamk-alt.github.io/Portfolio__series/public/shyam-banner-1920x1080.png">
+
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%232a0a1a'/%3E%3Ctext x='32' y='46' font-family='Arial,sans-serif' font-weight='700' font-size='38' text-anchor='middle' fill='%23ffb0c0'%3ES%3C/text%3E%3C/svg%3E">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300..700&display=swap">
+  <link rel="preload" href="assets/fonts/space-grotesk-variable.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="assets/css/series.css">
+
+  <script>
+    (function () {
+      var d = document.documentElement;
+      d.className += ' js is-locked';
+      if (window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches) d.className += ' reduce';
+      if (/[?&]intro=off/.test(location.search)) d.className = d.className.replace(' is-locked', '') + ' is-live';
+    })();
+  </script>
+  <noscript><style>.stage { display: none; }</style></noscript>
+</head>
+<body>
+  <div class="backdrop" aria-hidden="true"><i class="backdrop__spot"></i><i class="backdrop__grain"></i></div>
+  <div class="page-progress" aria-hidden="true"></div>
+
+  <!-- intro: title card, then profile picker -->
+  <div class="stage" id="stage">
+    <button class="stage__skip" id="stageSkip" type="button">Skip intro</button>
+
+    <div class="titlecard" aria-hidden="true">
+      <div class="titlecard__name">
+        <span style="--i:0">S</span><span style="--i:1">H</span><span style="--i:2">Y</span><span style="--i:3">A</span><span style="--i:4">M</span><span style="--i:5">&nbsp;</span><span style="--i:6">K</span><span style="--i:7">.</span>
+        <i class="titlecard__shine"></i>
+      </div>
+      <p class="titlecard__sub">PORTFOLIO SERIES</p>
+    </div>
+
+    <div class="picker" id="picker">
+      <h2 class="picker__q">Who’s watching?</h2>
+      <ul class="picker__list">
+        <li style="--i:0"><button class="profile" type="button" data-viewer="shyam" style="--i:0">
+          <span class="profile__art"><img src="public/shyam-face.jpg" alt="" width="240" height="240"></span>
+          <span class="profile__name">Shyam</span>
+          <span class="profile__hint">The full story</span>
+        </button></li>
+        <li><button class="profile" type="button" data-viewer="hiring" style="--i:1">
+          <span class="profile__art" style="--g:linear-gradient(135deg,#ffcf70,#e0702f)"><svg viewBox="0 0 24 24"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M9 7V5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2M3 13h18"/></svg></span>
+          <span class="profile__name">Hiring</span>
+          <span class="profile__hint">Skills, projects &amp; fit</span>
+        </button></li>
+        <li><button class="profile" type="button" data-viewer="dev" style="--i:2">
+          <span class="profile__art" style="--g:linear-gradient(135deg,#a89bff,#4a3ad6)"><svg viewBox="0 0 24 24"><path d="M8 8l-4 4 4 4M16 8l4 4-4 4M13.5 5l-3 14"/></svg></span>
+          <span class="profile__name">Dev</span>
+          <span class="profile__hint">Stack &amp; builds</span>
+        </button></li>
+        <li><button class="profile" type="button" data-viewer="design" style="--i:3">
+          <span class="profile__art" style="--g:linear-gradient(135deg,#ff7aa2,#b3194f)"><svg viewBox="0 0 24 24"><path d="M12 3l1.8 5.2L19 10l-5.2 1.8L12 17l-1.8-5.2L5 10l5.2-1.8z"/><path d="M19 16l.8 2.2L22 19l-2.2.8L19 22l-.8-2.2L16 19l2.2-.8z"/></svg></span>
+          <span class="profile__name">Design</span>
+          <span class="profile__hint">Interfaces &amp; motion</span>
+        </button></li>
+      </ul>
+      <p class="picker__foot">Pick a profile. It’s the same story for everyone — only the first scene changes.</p>
+    </div>
+  </div>
+
+  <header class="nav glass" id="nav">
+    <a class="nav__brand" href="#home" aria-label="Shyam K. — back to top">SHYAM K.<i></i></a>
+    <ul class="nav__links" id="navLinks">
+      <li><a href="#home" data-spy="home">Home</a></li>
+      <li><a href="#story" data-spy="story">Origin</a></li>
+      <li><a href="#moments" data-spy="moments">Milestones</a></li>
+      <li><a href="#projects" data-spy="projects">Reel</a></li>
+      <li><a href="#skills" data-spy="skills">Stack</a></li>
+      <li><a href="#journey" data-spy="journey">Timeline</a></li>
+      <li><a href="#contact" data-spy="contact">Contact</a></li>
+    </ul>
+    <div class="nav__right">
+      <button class="nav__who" id="navWho" type="button" aria-label="Switch profile">
+        <span class="nav__who-art" id="navWhoArt"><img src="public/shyam-face.jpg" alt="" width="60" height="60"></span>
+        <span id="navWhoName">Shyam</span>
+      </button>
+      <button class="nav__burger" id="navBurger" type="button" aria-label="Menu" aria-expanded="false" aria-controls="navLinks"><span></span></button>
+    </div>
+  </header>
+
+  <main>
+    <!-- cover -->
+    <section class="cover" id="home" data-scene="exit">
+      <div class="cover__grid">
+        <div class="cover__copy">
+          <p class="eyebrow rise" style="--d:100"><i class="eyebrow__dot"></i>A Shyam K. original series</p>
+          <h1 class="cover__name rise" style="--d:220">SHYAM K.</h1>
+          <p class="prompt rise" style="--d:340"><span class="prompt__path">-/shyamk</span> <span>I build</span> <span class="prompt__flag">--intelligent</span><i class="prompt__caret"></i></p>
+          <ul class="roles rise" style="--d:440">
+            <li>FRONTEND DEVELOPER</li><li>FULL-STACK DEVELOPER</li><li>CREATIVE TECHNOLOGIST</li>
+          </ul>
+          <p class="cover__motto rise" style="--d:540">Engineering intelligence. <em>Designing experiences.</em></p>
+          <p class="cover__welcome rise" style="--d:620" id="welcome">Welcome. Start where the story starts.</p>
+          <div class="cover__cta rise" style="--d:700">
+            <a class="btn btn--play" id="playBtn" href="#story"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M7 4.5v15l13-7.5z"/></svg><span>Play the story</span></a>
+            <a class="btn btn--glass" href="#projects">Browse the reel</a>
+          </div>
+          <ul class="facts rise" style="--d:800">
+            <li class="glass"><b>B.E CSE</b> • GRTIET • TIRUTTANI • 2024-28</li>
+            <li class="glass"><b>STUDYVAULT WORLD</b> • 30+ LANGUAGES • FRONTEND DEV</li>
+          </ul>
+        </div>
+
+        <div class="cover__photo rise" style="--d:300">
+          <div class="portrait">
+            <span class="portrait__ring portrait__ring--b"></span>
+            <span class="portrait__ring"></span>
+            <span class="portrait__ring portrait__ring--c"></span>
+            <span class="portrait__frame"><img src="public/shyam.jpg" alt="Portrait of Shyam K." width="1000" height="1000" fetchpriority="high"></span>
+          </div>
+          <div class="floatchip floatchip--a glass"><b>30+</b> languages</div>
+          <div class="floatchip floatchip--b glass">StudyVault World</div>
+          <div class="floatchip floatchip--c glass">@shyamk-alt</div>
+        </div>
+      </div>
+      <div class="scrollcue" aria-hidden="true">SCROLL<i></i></div>
+    </section>
+
+    <!-- shelf -->
+    <section class="shelf" id="shelf" aria-labelledby="shelfTitle">
+      <h2 class="shelf__title reveal" id="shelfTitle">Continue exploring</h2>
+      <div class="shelf__row">
+        <a class="tile reveal" href="#story" data-viewer-target="shyam" data-tilt style="--g:linear-gradient(135deg,#7a1a43,#3a0d25 60%,#1a0713);--d:0">
+          <span class="tile__ghost">01</span><span class="tile__ep">EPISODE 1</span><span class="tile__title">Origin</span><span class="tile__bar"><i style="--w:38%"></i></span>
+        </a>
+        <a class="tile reveal" href="#moments" data-tilt style="--g:linear-gradient(135deg,#8a3b2a,#4a1228 60%,#1a0713);--d:80">
+          <span class="tile__ghost">02</span><span class="tile__ep">EPISODE 2</span><span class="tile__title">Milestones</span><span class="tile__bar"><i style="--w:64%"></i></span>
+        </a>
+        <a class="tile reveal" href="#projects" data-viewer-target="hiring design" data-tilt style="--g:linear-gradient(135deg,#a3173f,#4a0f2a 60%,#16060f);--d:160">
+          <span class="tile__ghost">03</span><span class="tile__ep">EPISODE 3</span><span class="tile__title">The Reel</span><span class="tile__bar"><i style="--w:82%"></i></span>
+        </a>
+        <a class="tile reveal" href="#skills" data-viewer-target="dev" data-tilt style="--g:linear-gradient(135deg,#4b2a7a,#2a0f3c 60%,#140614);--d:240">
+          <span class="tile__ghost">04</span><span class="tile__ep">EPISODE 4</span><span class="tile__title">Stack</span><span class="tile__bar"><i style="--w:22%"></i></span>
+        </a>
+        <a class="tile reveal" href="#journey" data-tilt style="--g:linear-gradient(135deg,#7d2a5e,#3a0d33 60%,#150611);--d:320">
+          <span class="tile__ghost">05</span><span class="tile__ep">EPISODE 5</span><span class="tile__title">Timeline</span><span class="tile__bar"><i style="--w:50%"></i></span>
+        </a>
+      </div>
+    </section>
+
+    <!-- episode 1: origin -->
+    <section class="origin" id="story" data-scene="pin" aria-labelledby="originTitle">
+      <div class="origin__pin">
+        <div class="origin__grid">
+          <div>
+            <p class="scene-label">Episode 1 · Origin</p>
+            <h2 class="sr-only" id="originTitle">Origin</h2>
+            <p class="origin__text" data-words>I’m Shyam K., a B.E CSE student at GRTIET in Tiruttani, chasing one idea: software should feel intelligent. I design interfaces that move like cinema, wire up full-stack systems that actually ship, and treat every project like a small series — a hook, a story, a payoff. StudyVault World, my EdTech platform, already speaks 30+ languages. This season is just getting started.</p>
+          </div>
+          <aside class="nowplaying glass" aria-label="Now playing">
+            <div class="nowplaying__head">
+              <img class="nowplaying__photo" src="public/shyam-face.jpg" alt="" width="168" height="168">
+              <div>
+                <p class="nowplaying__label">NOW PLAYING</p>
+                <p class="nowplaying__name">Shyam K.</p>
+              </div>
+            </div>
+            <p class="nowplaying__line"><b>B.E CSE</b> • GRTIET • TIRUTTANI • 2024-28</p>
+            <div class="scrub" aria-hidden="true">
+              <div class="scrub__bar"><i></i></div>
+              <div class="scrub__time"><span id="scrubNow">0:00</span><span>1:30</span></div>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- episode 2: milestones -->
+    <section class="milestones" id="moments" data-scene="pass" aria-labelledby="momentsTitle">
+      <div class="milestones__head">
+        <p class="scene-label reveal">Episode 2 · Milestones</p>
+        <h2 class="scene-title reveal" id="momentsTitle" style="--d:100">Top moments</h2>
+      </div>
+      <div class="marquee" aria-hidden="true">
+        <span class="marquee__line">STUDYVAULT WORLD • 30+ LANGUAGES • FRONTEND DEV • STUDYVAULT WORLD • 30+ LANGUAGES • FRONTEND DEV • STUDYVAULT WORLD • 30+ LANGUAGES •</span>
+        <span class="marquee__line marquee__line--b">ENGINEERING INTELLIGENCE. DESIGNING EXPERIENCES. ENGINEERING INTELLIGENCE. DESIGNING EXPERIENCES. ENGINEERING INTELLIGENCE. DESIGNING EXPERIENCES.</span>
+      </div>
+      <div class="stats">
+        <article class="stat glass reveal" style="--d:0">
+          <p class="stat__num"><span data-count="30" data-suffix="+">30+</span></p>
+          <p class="stat__label">Languages</p>
+          <p class="stat__text">StudyVault World teaches in 30+ languages, powered by the Translate API.</p>
+        </article>
+        <article class="stat glass reveal" style="--d:90">
+          <p class="stat__num"><span data-count="4" data-pad="2">04</span></p>
+          <p class="stat__label">Projects in the reel</p>
+          <p class="stat__text">StudyVault World, MovieFlix, ApplyWorld and WeatherFlix.</p>
+        </article>
+        <article class="stat glass reveal" style="--d:180">
+          <p class="stat__num"><span data-count="3" data-pad="2">03</span></p>
+          <p class="stat__label">Hats worn</p>
+          <p class="stat__text">Frontend developer, full-stack developer, creative technologist.</p>
+        </article>
+        <article class="stat glass reveal" style="--d:270">
+          <p class="stat__num stat__num--date">2024–28</p>
+          <p class="stat__label">B.E CSE</p>
+          <p class="stat__text">GRTIET, Tiruttani — building in public while studying.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- episode 3: the reel -->
+    <section class="reel" id="projects" data-scene="pin" aria-labelledby="reelTitle">
+      <div class="reel__pin">
+        <div class="reel__head">
+          <div>
+            <p class="scene-label">Episode 3 · The Reel</p>
+            <h2 class="scene-title" id="reelTitle">Things I’ve built</h2>
+          </div>
+          <p class="reel__count" aria-hidden="true"><span id="reelNow">01</span> / 04</p>
+        </div>
+
+        <div class="reel__track">
+          <article class="poster" data-tilt style="--g:linear-gradient(145deg,#4a0f2c,#2a0a1a 55%,#1b0716)">
+            <div class="poster__art art art--vault" aria-hidden="true">
+              <svg class="globe" viewBox="0 0 200 200"><circle cx="100" cy="100" r="90"/><ellipse cx="100" cy="100" rx="90" ry="34"/><ellipse cx="100" cy="100" rx="34" ry="90"/><ellipse cx="100" cy="100" rx="62" ry="90"/><path d="M10 100h180M100 10v180"/></svg>
+              <span class="glyph" style="--x:8%;--y:16%;--s:54px;--o:.5;--dl:-1s">அ</span>
+              <span class="glyph" style="--x:70%;--y:10%;--s:44px;--o:.4;--dl:-3s">文</span>
+              <span class="glyph" style="--x:84%;--y:46%;--s:60px;--o:.5;--dl:-2s">ع</span>
+              <span class="glyph" style="--x:12%;--y:56%;--s:46px;--o:.38;--dl:-5s">Ж</span>
+              <span class="glyph" style="--x:46%;--y:4%;--s:34px;--o:.3;--dl:-4s">A</span>
+              <span class="glyph" style="--x:30%;--y:70%;--s:40px;--o:.42;--dl:-6s">あ</span>
+              <span class="glyph" style="--x:62%;--y:74%;--s:36px;--o:.34;--dl:-2s">ñ</span>
+              <span class="glyph" style="--x:90%;--y:12%;--s:30px;--o:.3;--dl:-7s">한</span>
+              <span class="glyph" style="--x:4%;--y:36%;--s:28px;--o:.3;--dl:-3s">Ω</span>
+            </div>
+            <span class="poster__no">01 / 04</span>
+            <span class="poster__tag glass">EdTech</span>
+            <div class="poster__info">
+              <h3 class="poster__title">StudyVault World</h3>
+              <p class="poster__desc">A learning universe that speaks 30+ languages — videos from YouTube, instant translation, and interactive visuals drawn on Canvas.</p>
+              <ul class="chips"><li class="chip">30+ languages</li><li class="chip">YouTube API</li><li class="chip">Translate API</li><li class="chip">Canvas API</li></ul>
+              <div class="poster__actions"><a class="btn btn--play btn--sm" href="https://github.com/shyamk-alt?tab=repositories&amp;q=studyvault" target="_blank" rel="noopener">Open on GitHub</a></div>
+            </div>
+          </article>
+
+          <article class="poster" data-tilt style="--g:linear-gradient(145deg,#6a0f2a,#2a0a1a 60%,#12050d)">
+            <div class="poster__art art art--movie" aria-hidden="true">
+              <span class="filmstrip filmstrip--l"></span><span class="filmstrip filmstrip--r"></span>
+              <div class="mgrid"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+              <span class="playbtn"><svg viewBox="0 0 24 24"><path d="M7 4.5v15l13-7.5z"/></svg></span>
+            </div>
+            <span class="poster__no">02 / 04</span>
+            <span class="poster__tag glass">Streaming UI</span>
+            <div class="poster__info">
+              <h3 class="poster__title">MovieFlix</h3>
+              <p class="poster__desc">A Netflix-style movie browser — rows of posters, search and details, powered by the TMDB API and built in React.</p>
+              <ul class="chips"><li class="chip">TMDB API</li><li class="chip">React</li><li class="chip">Netflix UI</li></ul>
+              <div class="poster__actions"><a class="btn btn--play btn--sm" href="https://github.com/shyamk-alt?tab=repositories&amp;q=movieflix" target="_blank" rel="noopener">Open on GitHub</a></div>
+            </div>
+          </article>
+
+          <article class="poster" data-tilt style="--g:linear-gradient(145deg,#3a0b2e,#2a0a1a 55%,#13060f)">
+            <div class="poster__art art art--apply" aria-hidden="true">
+              <div class="kanban">
+                <div class="kcol"><em></em><i></i><i></i><i></i></div>
+                <div class="kcol"><em></em><i></i><i></i></div>
+                <div class="kcol"><em></em><i></i><i></i><i></i></div>
+              </div>
+              <span class="tick"><svg viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span>
+            </div>
+            <span class="poster__no">03 / 04</span>
+            <span class="poster__tag glass">Productivity</span>
+            <div class="poster__info">
+              <h3 class="poster__title">ApplyWorld</h3>
+              <p class="poster__desc">A job tracker that keeps every application and its status in one clean place, so nothing slips through the cracks.</p>
+              <ul class="chips"><li class="chip">Job tracker</li><li class="chip">Web app</li></ul>
+              <div class="poster__actions"><a class="btn btn--play btn--sm" href="https://github.com/shyamk-alt?tab=repositories&amp;q=applyworld" target="_blank" rel="noopener">Open on GitHub</a></div>
+            </div>
+          </article>
+
+          <article class="poster" data-tilt style="--g:linear-gradient(160deg,#5a1230,#2a0a1a 55%,#12050d)">
+            <div class="poster__art art art--weather" aria-hidden="true">
+              <span class="sun"></span>
+              <svg class="cloud" viewBox="0 0 200 120"><path d="M50 104a32 32 0 0 1 4-63 44 44 0 0 1 84-6 36 36 0 0 1 12 69z"/></svg>
+              <span class="rain"></span>
+              <b class="deg">28°</b>
+            </div>
+            <span class="poster__no">04 / 04</span>
+            <span class="poster__tag glass">Weather</span>
+            <div class="poster__info">
+              <h3 class="poster__title">WeatherFlix</h3>
+              <p class="poster__desc">Weather, presented like a series — forecasts in a cinematic, card-driven interface you actually want to open.</p>
+              <ul class="chips"><li class="chip">Weather</li><li class="chip">Frontend</li><li class="chip">UI design</li></ul>
+              <div class="poster__actions"><a class="btn btn--play btn--sm" href="https://github.com/shyamk-alt?tab=repositories&amp;q=weatherflix" target="_blank" rel="noopener">Open on GitHub</a></div>
+            </div>
+          </article>
+        </div>
+
+        <div class="reel__bar" aria-hidden="true"><i></i></div>
+      </div>
+    </section>
+
+    <!-- episode 4: stack -->
+    <section class="stack" id="skills" aria-labelledby="stackTitle">
+      <div class="stack__grid">
+        <div class="stack__left">
+          <p class="scene-label reveal">Episode 4 · Stack</p>
+          <h2 class="scene-title reveal" id="stackTitle" style="--d:100">The tools behind the scenes</h2>
+          <p class="stack__lede reveal" style="--d:200">Frontend craft first, full-stack range when a product needs it, and a creative-tech streak for the moments that should feel like cinema.</p>
+          <div class="orbit reveal" style="--d:300" aria-hidden="true">
+            <span class="orbit__ring"><i></i></span><span class="orbit__ring"><i></i></span><span class="orbit__ring"><i></i></span>
+            <span class="orbit__core glass">STACK</span>
+          </div>
+        </div>
+        <div class="stack__list">
+          <article class="group glass reveal">
+            <p class="group__name">Languages <span>01</span></p>
+            <ul class="chips"><li class="skill" style="--k:0">HTML</li><li class="skill" style="--k:1">CSS</li><li class="skill" style="--k:2">JavaScript</li></ul>
+          </article>
+          <article class="group glass reveal">
+            <p class="group__name">Frontend <span>02</span></p>
+            <ul class="chips"><li class="skill" style="--k:0">React</li><li class="skill" style="--k:1">Next.js</li><li class="skill" style="--k:2">Tailwind CSS</li><li class="skill" style="--k:3">Framer Motion</li></ul>
+          </article>
+          <article class="group glass reveal">
+            <p class="group__name">Backend &amp; data <span>03</span></p>
+            <ul class="chips"><li class="skill" style="--k:0">Node.js</li><li class="skill" style="--k:1">MongoDB</li></ul>
+          </article>
+          <article class="group glass reveal">
+            <p class="group__name">Creative tech <span>04</span></p>
+            <ul class="chips"><li class="skill" style="--k:0">Three.js</li><li class="skill" style="--k:1">Canvas API</li><li class="skill" style="--k:2">Figma</li><li class="skill" style="--k:3">UI / UX design</li></ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- episode 5: timeline -->
+    <section class="timeline" id="journey" aria-labelledby="journeyTitle">
+      <p class="scene-label reveal">Episode 5 · Timeline</p>
+      <h2 class="scene-title reveal" id="journeyTitle" style="--d:100">The story so far</h2>
+      <div class="tl" id="tl">
+        <div class="tl__line" aria-hidden="true"><i></i></div>
+        <article class="tl__item"><span class="tl__dot"></span>
+          <p class="tl__when">2024</p>
+          <h3 class="tl__title">Season one begins</h3>
+          <p class="tl__text">Started B.E CSE at GRTIET, Tiruttani — the first episode of this series.</p>
+        </article>
+        <article class="tl__item"><span class="tl__dot"></span>
+          <p class="tl__when">Jan 2025</p>
+          <h3 class="tl__title">Web Development Intern</h3>
+          <p class="tl__text">Joined Grow Your Skills, Bangalore, as a Web Development Intern.</p>
+        </article>
+        <article class="tl__item"><span class="tl__dot"></span>
+          <p class="tl__when">Now</p>
+          <h3 class="tl__title">StudyVault World</h3>
+          <p class="tl__text">Building an EdTech platform that speaks 30+ languages, alongside MovieFlix, ApplyWorld and WeatherFlix.</p>
+        </article>
+        <article class="tl__item"><span class="tl__dot"></span>
+          <p class="tl__when">Next</p>
+          <h3 class="tl__title">Frontend / UI-UX internship</h3>
+          <p class="tl__text">Looking for a team that cares about interfaces as much as I do. Could be yours.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- finale -->
+    <section class="finale" id="contact" data-scene="enter" aria-labelledby="finaleTitle">
+      <span class="finale__glow" aria-hidden="true"></span>
+      <div class="finale__inner">
+        <p class="scene-label">Finale · Contact</p>
+        <h2 class="finale__title" id="finaleTitle"><span class="t1">Next episode</span><span class="t2">starts with you.</span></h2>
+        <p class="finale__lede">Got an internship, a product idea or a wild interface to build? Say hello.</p>
+        <div class="links">
+          <a class="linkcard glass" href="mailto:k.shyam5981@gmail.com"><small>Email</small><strong>K.SHYAM5981@GMAIL.COM<svg viewBox="0 0 24 24"><path d="M7 17L17 7M8 7h9v9"/></svg></strong></a>
+          <a class="linkcard glass" href="https://www.linkedin.com/in/shyam-k-88a4093a9" target="_blank" rel="noopener"><small>LinkedIn</small><strong>SHYAM-K-88A4093A9<svg viewBox="0 0 24 24"><path d="M7 17L17 7M8 7h9v9"/></svg></strong></a>
+          <a class="linkcard glass" href="https://github.com/shyamk-alt" target="_blank" rel="noopener"><small>GitHub</small><strong>SHYAMK-ALT<svg viewBox="0 0 24 24"><path d="M7 17L17 7M8 7h9v9"/></svg></strong></a>
+          <a class="linkcard linkcard--wide glass" href="https://shyamk-alt.github.io/Portfolio__series/"><small>Portfolio</small><strong><span>SHYAMK-ALT.GITHUB.IO/<wbr>PORTFOLIO__SERIES</span><svg viewBox="0 0 24 24"><path d="M7 17L17 7M8 7h9v9"/></svg></strong></a>
+        </div>
+      </div>
+      <p class="foot">© 2026 Shyam K. · <a href="https://github.com/shyamk-alt" target="_blank" rel="noopener">github.com/shyamk-alt</a> · Hand-built with HTML, CSS and JavaScript.</p>
+    </section>
+  </main>
+
+  <script src="assets/js/stage.js" defer></script>
+  <script src="assets/js/ui.js" defer></script>
+  <script src="assets/js/scroll.js" defer></script>
+</body>
+</html>
